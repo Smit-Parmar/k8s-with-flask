@@ -5,7 +5,7 @@ FROM python:3.10-alpine
 WORKDIR /app
 
 # Copying all the application files to the working directory
-COPY . /app
+COPY /app /app
 # Install all the dependencies required to run the Flask application
 RUN pip install -r requirements.txt
 
